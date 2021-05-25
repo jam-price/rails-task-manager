@@ -3,14 +3,19 @@
     <p class="details"><%= @task.details %></p>
 
     <div>
-        <i class="fas fa-undo">
-            <%= link_to 'Back', tasks_path  %>
-        </i>
+        <span class="btn btn-primary">
+            <i class="fas fa-undo">
+                <%= link_to 'Back', tasks_path  %>
+            </i>
+        </span>
 
-        <i class="fas fa-cut">
-            <%= link_to 'Edit',  edit_task_path %>
-        </i>
-
+        <span class="btn btn-primary">
+            <i class="fas fa-cut">
+                <%= link_to 'Edit',  edit_task_path %>
+            </i>
+        </span>
+        
+    <span class="btn btn-primary">
         <i class="far fa-trash-alt">
             <%= link_to 'Delete',  
             task_path(@task), 
@@ -18,5 +23,6 @@
             data: {confirm: "Sure you want to delete?"} 
             %>
         </i>
+    </span>
     </div>
 </div>

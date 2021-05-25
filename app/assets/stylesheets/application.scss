@@ -1,8 +1,53 @@
 @import "bootstrap/scss/bootstrap";
 
+h1 {
+    color: rgb(190, 0, 0);
+}
 .details {
     background-color: rgb(196, 196, 196);
     border-radius: 8px;
     padding: 8px;
     box-shadow: 2px 2px 10px rgb(228, 228, 228);
+}
+
+.container {
+    background-color: rgb(233, 233, 233);
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.form-check {
+    margin: 16px;
+}
+
+h3 {
+    color: rgb(175, 120, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    background-color: rgba(255, 255, 255, 0.877);
+    padding: 20px;
+    margin: 10px;
+    list-style: none;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px grey ;
+}
+
+body {
+    padding-top: 40px;
+    background-color: rgb(224, 224, 224);
+}
+
+span a {
+    color: white;
+}
+
+span a:hover {
+    color: white;
+    text-decoration: none;
+    transform: rotate(50);
 }

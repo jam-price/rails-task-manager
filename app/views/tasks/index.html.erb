@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container text-center">
 
 <h1>My Tasks</h1>
 
@@ -11,18 +11,20 @@
         <i class="far fa-square"></i>
       <% end %>
       <%= link_to task.title, task_path(task) %>
+      <i class="far fa-trash-alt"></i>
     </li>
   <% end %>
 </ul>
 
-<p>
+<span class="btn btn-primary">
   <%= link_to 'Add a new Task', new_task_path %>
-</p>
+  <i class="fas fa-plus"></i>
+</span>
 
 <%# <%= link_to  
         task_path(task), 
         method: :delete, 
         data: {confirm: "Sure you want to delete?"} do
       %>
-      <i class="far fa-trash-alt"></i>
 </div>
+      <i class="far fa-trash-alt"></i>
