@@ -1,5 +1,7 @@
-<h2>Add a task</h2>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', tasks_path  %>
+<div class="container">
+  <h2>Add a task</h2>
+  <%= render 'form' %>
+  <i class="fas fa-undo">
+    <%= link_to 'Back', tasks_path  %>
+  </i>
+</div>

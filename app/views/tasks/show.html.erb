@@ -1,10 +1,22 @@
-<h2><%= @task.title %></h2>
-<p><%= @task.details %></p>
-<p>Completed? <%= @task.completed %></p>
-<%= link_to 'Back', tasks_path  %>
-<%= link_to 'Edit',  edit_task_path %>
-<%= link_to 'Delete',  
-task_path(@task), 
-method: :delete, 
-data: {confirm: "Sure you want to delete?"} 
-%>
+<div class="container">
+    <h2><%= @task.title %></h2>
+    <p class="details"><%= @task.details %></p>
+
+    <div>
+        <i class="fas fa-undo">
+            <%= link_to 'Back', tasks_path  %>
+        </i>
+
+        <i class="fas fa-cut">
+            <%= link_to 'Edit',  edit_task_path %>
+        </i>
+
+        <i class="far fa-trash-alt">
+            <%= link_to 'Delete',  
+            task_path(@task), 
+            method: :delete, 
+            data: {confirm: "Sure you want to delete?"} 
+            %>
+        </i>
+    </div>
+</div>

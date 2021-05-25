@@ -1,6 +1,8 @@
-<h2>Edit Task</h2>
-<h3><%= @task.title %></h3>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', tasks_path  %>
+<div class="container">
+  <h2>Edit Task</h2>
+  <h3><%= @task.title %></h3>
+  <%= render 'form' %>
+  <i class="fas fa-undo">
+    <%= link_to 'Back', tasks_path  %>
+  </i>
+</div>
