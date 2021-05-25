@@ -11,7 +11,12 @@
         <i class="far fa-square"></i>
       <% end %>
       <%= link_to task.title, task_path(task) %>
-      <i class="far fa-trash-alt"></i>
+<%= link_to '<i class="far fa-trash-alt"></i>'.html_safe,
+        task_path(task), 
+        method: :delete, 
+        data: {confirm: "Sure you want to delete?"}
+      %>
+      <%# <i class="far fa-trash-alt"></i> %>
     </li>
   <% end %>
 </ul>
@@ -20,11 +25,4 @@
   <%= link_to 'Add a new Task', new_task_path %>
   <i class="fas fa-plus"></i>
 </span>
-
-<%# <%= link_to  
-        task_path(task), 
-        method: :delete, 
-        data: {confirm: "Sure you want to delete?"} do
-      %>
 </div>
-      <i class="far fa-trash-alt"></i>
